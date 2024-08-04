@@ -1,0 +1,489 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-variation-settings: "slnt" 0;
+}
+:root{
+    --green: rgb(33, 200, 33);
+    --grey: rgb(134, 134, 134);
+    --bg: rgb(248, 248, 248);
+}
+main {
+    padding: 3vh 0;
+    min-height: 90vh;
+}
+
+/* navbar */
+nav {
+    padding: 0 15vh;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2; 
+}
+
+/* nav logo */
+nav .logo {
+    padding: 2vh 0;
+    width: 12rem;
+    height: 3rem;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+/* page link */
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+    list-style: none;
+    padding: 2vh 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    padding: 13px 25px;
+}
+
+nav a {
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+nav li:hover {
+    opacity: 0.5;
+    transition: opacity 0.5s;
+}
+
+/* job portal link */
+nav ul li:nth-child(4) {
+    background-color:var(--green);
+    border-radius: 50px;
+    padding: 13px 25px;
+    display: block;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+nav ul li:nth-child(4) a {
+    color: white;
+}
+
+/* internee's login link */
+nav ul li:nth-child(5) {
+    border: 2px solid var(--green);
+    border-radius: 50px;
+    padding: 13px 25px;
+    cursor: pointer;
+}
+
+nav ul li:nth-child(5) a {
+    color: var(--green);
+}
+
+.text {
+    position: relative;
+    margin-top: 5%;
+    left: 20%;
+    max-width: 60%;
+    text-align: center;
+    color: rgb(37, 37, 37);
+}
+
+.text p:first-child {
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 5vh;
+}
+
+.boxes {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    gap: 10vh;
+}
+
+.box {
+    max-width: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 2px solid var(--grey);
+    padding: 4vh 7vh;
+}
+
+.box .image {
+    width: 10vh;
+    height: 10vh;
+    margin-bottom: 2vh;
+}
+
+.box .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.boxes .box p:nth-child(2) {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.boxes .box p:nth-child(3) {
+    font-size: 18px;
+}
+
+/* contact page css */
+.contact-details{
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+    max-width: 100%;
+    margin-bottom: 15vh;
+}
+.detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+    position: relative;
+    width: 90vh;
+}
+.detail .round{
+    width: 25px;
+    height: 25px;
+    background-color: var(--green);
+    border-radius: 50%;
+    position: absolute;
+    margin-left: -10px;
+    top: 5vh;
+    z-index: 1;
+}
+.detail .design::before,.detail .design::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 20vh;
+    background-color: var(--bg);
+}
+.detail .design::after{
+    top: -15%;
+}
+.contact-details .description{
+    height: 20vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 7vh;
+}
+.contact-details .icon{
+    padding: 4vh;
+    background-color: var(--bg);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.contact-details .icon img{
+    width: 100%;
+    height: 100%;
+}
+.detail .para{
+    padding: 1vh;
+    height: auto;
+}
+.detail .para h3{
+    margin-bottom: 1vh;
+}
+
+.detail .para p{
+    color:  var(--grey);
+    width: 100vh;
+    line-height: 4vh;
+    font-size: 17px;
+}
+
+.map {
+    position: relative;
+    height: 105vh;
+    width: 100%;
+    margin-top: 10vh;
+    z-index: 0;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 55vh;    
+    border-radius: 1vh;
+    padding: 4vh;
+    justify-content: center;
+    position: relative;
+    left: 65%;
+    margin-top: -40%;
+    background-color: white;
+    z-index: 1; 
+}
+
+label {
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    color: rgb(160, 157, 157);
+}
+
+input {
+    width: 100%;
+    height: 4vh;
+    border: 1px solid rgb(160, 157, 157);
+    border-radius: 5px;
+    margin-bottom: 2vh;
+    padding: 1vh;
+}
+
+textarea{
+    height: 20vh;
+    padding: 1vh;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button {
+    background-color: rgb(19, 223, 104);
+    color: white;
+    padding: 2vh 4vh;
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 1vh;
+    cursor: pointer;
+    margin-top: 4vh;
+}
+
+button:hover {
+    background-color:var(--green);
+}
+
+.info-box p {
+    margin-top: 2vh;
+    font-size: 11px;
+    color: var(--grey);
+}
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 5vh;
+    padding: 10vh 30vh;
+    background-color: var(--bg);
+}
+
+footer .logo {
+    width: 12rem;
+    height: 3rem;
+}
+
+footer h4 {
+    margin-bottom: 5vh;
+}
+
+footer p {
+    line-height: 5vh;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer .social-icons {
+    margin-top: -1vh;
+    margin-bottom: 5vh;
+    display: flex;
+    gap: 2vh;
+}
+
+footer .social-icons .fa-brands {
+    padding: 1vh;
+    background-image: linear-gradient(to right, rgb(255, 153, 0), rgb(250, 184, 43));
+    color: white;
+    border-radius: 50%;
+    font-size: large;
+}
+
+/* for #responsive */
+/* menu icon 3 bars */
+.menuicon {
+    color: var(--grey);
+    cursor: pointer;
+    font-size: xx-large;
+    transition: all 0.3s ease;
+    display: none;
+}
+
+@media (max-width: 992px) {
+    main {
+        padding: 0;
+    }
+
+    .menuicon {
+        display: block;
+        float: left;
+        margin-left: 10px;
+    }
+    nav ul {
+        display: none;
+    }
+
+    nav .navlist.mobile-nav {
+        position: absolute;
+        right: 0;
+        top: 50px;
+        width: 100%;
+        display: block;
+        text-align: left;
+        background-color: white;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 9;
+    }
+
+    nav .navlist.mobile-nav ul {
+        flex-direction: column;
+        display: block;
+        padding: 0;
+        width: 100%;
+    }
+
+    nav .navlist.mobile-nav li {
+        width: 100%;
+        text-align: left;
+    }
+
+    .boxes {
+        padding: 0;
+        gap: 2vh;
+    }
+
+    .boxes .box {
+        padding: 1vh;
+    }
+
+    #contact-form {
+        left: 30%;
+        transform: translateY(-50%);
+    }
+    footer{
+        margin-top: 18vh;
+       
+    }
+    .contact-details .description{
+        gap: 3vh;
+    }
+    .detail .para {
+        width: 80vh;
+    }
+
+    .detail .para p {
+        width: 100%;
+        line-height: 3.5vh;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .boxes {
+        gap: 1vh;
+    }
+
+    .boxes .box {
+        padding: 0;
+        max-width: 100vh;
+    }
+
+    footer{
+        padding: 3vh 2vh;
+    }
+}
+
+@media (max-width: 540px) {
+    .boxes {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box {
+        width: 50vh;
+        height: 30vh;
+    }
+    .contact-details {
+        margin-top: 10vh; 
+        margin-bottom: 10vh; 
+    }
+
+    .detail {
+        width: 100%;
+    }
+
+    .detail .design::before,.detail .design::after {
+        height: 40vh;
+    }
+    .detail:last-of-type .design::before {
+        height: 25vh;
+    }
+
+    .contact-details .description {
+        grid-template-columns: 1fr; 
+        height: auto;
+        width: auto;
+    }
+
+    .contact-details .icon {
+        width: 40px; 
+        height: 40px; 
+    }
+
+    .detail .para  {
+        width: 50vh;
+        font-size: 15px; 
+        line-height: 3vh;
+    }
+    #contact-form{
+        left: 15%;
+        top: -60%;
+        margin-top: 0;
+    }
+
+    footer{
+        padding-left: 2vh;
+    }
+    footer p {
+        line-height: 3vh;
+        font-size: 12px;
+    }
+    footer .social-icons {
+        margin-bottom: 3vh;
+        gap: 1vh;
+    }
+    
+    footer .social-icons .fa-brands {
+        font-size: 15px;
+    }
+
+}
