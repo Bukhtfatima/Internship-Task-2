@@ -1,0 +1,646 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-variation-settings: "slnt" 0;
+}
+:root{
+    --green: rgb(33, 200, 33);
+    --grey: rgb(134, 134, 134);
+    --bg: rgb(248, 248, 248);
+}
+
+main {
+    height: 100%;
+}
+/* for transition */
+.animation{
+    transform: translateY(50%);
+    opacity: 0;
+}
+.animation.view-in{
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform 1s, opacity 1s;
+}
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/job-portal\ bg1.svg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* navbar */
+.fixed{
+    background-color: white;
+    position: fixed;
+    z-index: 1000;
+    top: 0%;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+.fixed a{
+    color: black;
+}
+.fixed li:last-child a{
+    color: white;
+}
+nav {
+    padding: 1vh 25vh;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+
+}
+
+/* nav logo */
+nav .logo {
+    padding: 2vh 0;
+    width: 12rem;
+    height: 3rem;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+/* page link */
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 1px;
+    list-style: none;
+    padding: 2vh 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    padding: 13px 25px;
+    cursor: pointer;
+}
+
+nav a {
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+
+nav ul li:first-child {
+    opacity: 0.5;
+}
+
+nav ul li:last-child {
+    background-color:var(--green);
+    padding: 13px 25px;
+}
+
+
+.container1 {
+    padding: 3vh 20vh 3vh 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.container1 .main-text {
+    color: white;
+    margin-bottom: 5vh;
+}
+.job-counts{
+    margin-bottom: 2vh;
+    width:55vh;
+    overflow: hidden;
+    padding-right: 10px;
+    font-size: large;
+}
+#counting{
+    display: inline-block; 
+    width: 10vh;
+}
+.main-text .heading {
+    font-size: 4.5rem;
+}
+
+.find-btn {
+    padding: 2vh;
+    background-color: white;
+    color:var(--grey);
+    width: 15vh;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    background-color: white;
+    width: 75%;
+    align-items: center;
+    padding: 4vh;
+    justify-content: space-between;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.job-search,
+.Category,
+.company {
+    padding: 2vh;
+    border: 1px solid black;
+    display: flex;
+    border-radius: 5px;
+    gap: 0.5vh;
+    width: 25vh;
+}
+.form .icon{
+    width: 20px;
+    height: 20px;
+}
+.form .icon img{
+    width: 100%;
+    height: 100%;
+}
+input {
+    border: none;
+}
+
+select {
+    border: none;
+    width: 25vh;
+    color: var(--grey);
+    appearance: none;
+}
+
+input:focus,
+select:focus {
+    outline: none; 
+}
+.search-btn {
+    background-color: rgb(45, 160, 10);
+    display: block;
+    height: 7vh;
+    width: 25vh;
+    padding: 1vh;
+    border: none;
+    margin-bottom: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.container2 {
+    padding: 20vh 35vh;
+    background-color:var(--bg);
+    display: flex;
+    justify-content: space-between;
+    gap: 5vh;
+}
+
+.container2 .about {
+    display: flex;
+    flex-direction: column;
+    width: 35vh;
+}
+.about .image{
+    width: 10vh;
+    height: 10vh;
+}
+.about .image img{
+    width: 100%;
+    height: 100%;
+}
+.about .main-text {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 3vh;
+}
+.about p.para{
+    font-size: 15px;
+}
+.container3{
+    padding: 15vh  35vh;
+}.container3 .text{
+    text-align: center;
+}
+.container3 p{
+    font-size: 1rem;
+}
+.container3 .large{
+    font-size: 3rem;
+}
+.job-lists{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2vh;
+    margin-top: 10vh;
+    cursor: pointer;
+}
+.list-btn{
+    padding: 2vh 1vh;
+    border: 1px solid #98ecb6;
+    background-color: white;
+    width: 35vh;
+    border-radius: 3px;
+    font-size: 1.15rem;
+}
+.list-btn:hover{
+    background-color: var(--bg);
+   color: rgb(5, 163, 89);
+   transition: background-color 1s ease-in ;
+
+}
+.container4{
+    color: white;
+    width: 100%;
+    height: 30vh;
+    background-image: url(1st\ image2.svg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container4 .box{
+    padding: 15vh  30vh;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.domain-count, .member-count, .resume-count, .company-count{
+    font-size: 2rem;
+    font-weight: bold;
+}
+/* container 5 */
+.container5 {
+    background-color: var(--bg);
+    height: 120vh;
+    width: 100%;
+}
+
+/* headings area */
+.container5 .text {
+    padding-top: 15vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container5 p.blog {
+    font-size: 20px;
+}
+
+/* blogs area */
+.container5 .blogs {
+    padding: 15vh;  
+    padding-top: none;
+    padding-bottom: none;
+    display: flex;
+    gap: 10px;
+}
+
+/* blog box */
+.container5 .blogs .blog {
+    padding: 2vh;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 40vh;
+}
+
+/* blog images */
+.blogs .image {
+    width: 100%;
+    height: 30%;
+}
+
+.blogs .image img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.blogs .image:hover,
+.blog .blog-name a:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in;
+}
+
+/* blog text */
+.blogs .blog-name a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.blogs .blog-discription {
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--grey);
+    line-height: 4vh;
+    width: auto;
+}
+
+section{
+    background-color: var(--green);
+    max-width: 100%;
+    color: white;
+    text-align: center;
+    padding: 5vh;
+    line-height: 4vh;
+    overflow: hidden;
+}
+section .animation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+}
+section h1{
+    font-size: xx-large;
+}
+section p{
+    width: 40%;
+}
+.email-contact{
+    display: flex;
+    width: auto;
+}
+.email-contact input{
+    padding: 2vh 3vh ;
+    width: 40vh;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.email-contact .subscribe-btn{
+    padding: 2vh 3vh ;
+    background-color: rgb(15, 182, 84);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+footer{
+    display: flex;
+    padding: 15vh 35vh;
+    background-color: rgb(24, 23, 34);
+    justify-content: space-between;
+    line-height: 4vh;
+}
+footer .about-us{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    color: white;
+}
+footer .questions{
+    width: 30vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    color: white;
+}
+.location, .phone, .email{
+    display: flex;
+    gap: 2vh;
+}
+footer p{
+    color:var(--grey);
+}
+.social-icons{
+    margin-bottom: 5vh;
+    display: flex;
+    gap: 2vh;
+}
+.fa-brands{
+    color: white;
+    padding: 2vh;
+    background-color:rgb(20, 19, 24);
+    color: white;
+    border-radius: 50%;
+    font-size: x-large;
+}
+ .fa-solid{
+    color: white;
+}
+/* menu */
+.fixed-menu{
+    position: fixed;
+    z-index: 1000;
+    left: 80%;
+}
+.menuicon {
+    color: var(--grey);
+    cursor: pointer;
+    font-size: x-large;
+    transition: all 0.3s ease;
+    display: none;
+}
+
+
+@media (max-width: 992px) {
+    body::before {
+        display: none;
+    }
+
+    main {
+        padding: 0;
+    }
+
+    nav, .container1, .container2, .container3{
+        padding: 3vh 2vh;
+    }
+    .container3 .list-btn{
+        width: auto;
+    }
+    .container1 .form{
+        width: 90%;
+    }
+    nav .logo {
+        width: 10rem;
+        height: 2.5rem;
+    }
+    nav ul {
+        gap: 0;
+        list-style: none;
+        padding: 2vh 0;
+        overflow: hidden;
+    }
+    nav ul li {
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    nav ul li:last-child {
+        background-color: rgb(45, 160, 10);
+        padding: 10px 20px;
+        display: block;
+        margin-right: 15px;
+    }
+    .domain, .member, .resume, .company{
+        width: 40vh;
+    }
+    .container5 {
+        margin: 0;
+        padding: 15vh 0;
+        width: auto;
+        height: 130vh;
+    }
+
+    .container5 .blogs {
+        padding: 0;
+    }
+    footer .about-us{
+        width: 40%;
+    }
+
+}
+@media (max-width: 768px){
+    .menuicon {
+        display: block;
+    }
+    nav{
+        background-color: black;
+    }
+    nav .logo {
+        padding: 0;
+    }
+    nav ul {
+        display: none;
+    }
+
+    nav .navlist.mobile-nav {
+        position: absolute;
+        right: 0;
+        top: 50px;
+        width: 100%;
+        display: block;
+        text-align: left;
+        background-color: white;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 9;
+    }
+
+    nav .navlist.mobile-nav ul {
+        flex-direction: column;
+        display: block;
+        padding: 0;
+        width: 100%;
+    }
+
+    nav .navlist.mobile-nav li {
+        width: 100%;
+        text-align: left;
+    }
+    .main-text{
+        margin-top: 15vh;
+    }
+    .main-text .heading {
+        font-size: 3rem;
+    }
+    input {
+        width: 20vh;
+    }
+    
+    select {
+        width: 20vh;
+    }
+    .container4 .box{
+        padding: 15vh  10vh;
+    }
+    .domain, .member, .resume, .company{
+        width: 40vh;
+    }
+    .container5 {
+        height: 160vh;
+    }
+    footer{
+        padding: 15vh 15vh;
+    }
+    footer .about-us{
+        width: 50%;
+    }
+}
+@media (max-width: 540px){
+    header{
+        height: auto;
+    }
+    .form{
+        flex-direction: column;
+        gap: 2vh;
+    }
+    .job-search,
+.Category,
+.company, .search-btn{
+        width: 100%;
+    }
+    .form input, .form select{
+        width: 100%;
+    }
+.container2{
+    flex-direction: column;
+}
+.container2 .about{
+    width: 100%;
+}
+.container3 .job-lists{
+    grid-template-columns: 1fr;
+}
+.container4{
+    height: auto;
+}
+.container4 .box{
+    padding: 15vh  3vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+.domain, .member, .resume, .company{
+    width: 10vh;
+    text-align: center;
+}
+.container5 {
+    height: 500vh;
+}
+
+.container5 .blogs {
+    flex-direction: column;
+    padding: 0;
+}
+
+.container5 .blogs .blog {
+    height: auto;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 0;
+}
+
+.container5 .blog .image {
+    height: 60%;
+}
+section{
+    text-align: center;
+}
+section p{
+    width: 90%;
+}
+footer{
+    flex-direction: column;
+}
+}

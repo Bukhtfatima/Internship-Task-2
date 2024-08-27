@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="title icon.png" type="image/png">
+    <title>Internee.pk | Job portal</title>
+    <link rel="stylesheet" href="jobportal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <nav id="nav">
+                <div class="logo"><a href="index.html"><img src="logo internee.png" alt="Logo"></a></div>
+                <!-- for adding mobile navigation class .mobile-nav -->
+                <div id="list" class="navlist">
+                    <ul>
+                        <li><a href="jobportal.html">Home</a></li>
+                        <li><a href="companyCollab.html">Company</a></li>
+                        <li><a href="#">Hiring Now</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="contactUs.html">Contact<a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="#">Post a Job</a></li>
+                    </ul>
+                </div>
+                <a href="javascript:void(0);" class="menuicon" onclick="menu()">&#8801; menu</a>
+            </nav>
+            <div class="container1 animation">
+                <div class="main-text">
+                    <p class="job-counts"> We have <span id="counting"></span> great job offers you deserve!</p>
+                    <strong class="heading">Your Dream</strong>
+                    <p class="heading">Job is Waiting</p>
+                </div>
+                <div class="find-btn">Find Jobs</div>
+                <div class="form">
+
+                    <div class="job-search">
+                        <div class="icon"><img src="images/search icon.svg" alt=""></div>
+                        <input type="text" name="job-search" placeholder="eg. Web Developer">
+                    </div>
+
+                    <div class="Category">
+                        <div class="icon"><img src="images/drop-down icon.svg" alt=""></div>
+                        <select name="Category" id="Category">
+                            <option value="Category">Category</option>
+                        </select>
+                    </div>
+
+                    <div class="company">
+                        <div class="icon"><img src="images/drop-down icon.svg" alt=""></div>
+                        <select name="company" id="company">
+                            <option value="company">company</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="search-btn">Search</button>
+                </div>
+
+            </div>
+        </header>
+
+        <div class="container2">
+            <!-- 1st box -->
+            <div class="about animation">
+                <div class="image"><img src="images/job icon1.svg" alt=""></div>
+                <div class="main-text">Search Millions of Jobs</div>
+                <p class="para">A small river named Duden flows by their place and supplies.</p>
+            </div>
+            <!-- 2nd box -->
+            <div class="about animation">
+                <div class="image"><img src="images/job icon2.svg" alt=""></div>
+                <div class="main-text">Search Millions of Jobs</div>
+                <p class="para">A small river named Duden flows by their place and supplies.</p>
+            </div>
+            <!-- 3rd box -->
+            <div class="about animation">
+                <div class="image"><img src="images/job icon3.svg" alt=""></div>
+                <div class="main-text">Search Millions of Jobs</div>
+                <p class="para">A small river named Duden flows by their place and supplies.</p>
+            </div>
+            <!-- 4rth-box -->
+            <div class="about animation">
+                <div class="image"><img src="images/job icon4.svg" alt=""></div>
+                <div class="main-text">Search Millions of Jobs</div>
+                <p class="para">A small river named Duden flows by their place and supplies.</p>
+            </div>
+        </div>
+        <div class="container3">
+            <div class="text">
+                <p>Categories work wating for you</p>
+                <p class="large">Current <strong>Job Posts</strong></p>
+            </div>
+
+            <div class="job-lists animation">
+                <div class="list-btn">Web Development</div>
+                <div class="list-btn">Education & Training</div>
+                <div class="list-btn">AI Development</div>
+                <div class="list-btn">Web Designer</div>
+                <div class="list-btn">Graphic Designer</div>
+                <div class="list-btn">English</div>
+                <div class="list-btn">Project Management</div>
+                <div class="list-btn">Customer Service</div>
+                <div class="list-btn">Video Editing</div>
+                <div class="list-btn">Social Media</div>
+                <div class="list-btn">Finance Management</div>
+                <div class="list-btn">Marketing & Sales</div>
+                <div class="list-btn">Engineering & Sciences</div>
+                <div class="list-btn">Writing</div>
+                <div class="list-btn">Office & Admin</div>
+                <div class="list-btn">Software Development</div>
+            </div>
+        </div>
+        <div class="container4">
+            <div class="box animation">
+                <div class="domain">
+                    <div class="domain-count"></div>Jobs in Different Domains
+                </div>
+                <div class="members">
+                    <div class="member-count"></div>Members
+                </div>
+                <div class="Resume">
+                    <div class="resume-count"></div>Resume
+                </div>
+                <div class="Company">
+                    <div class="company-count"></div>Company
+                </div>
+            </div>
+        </div>
+        <div class="container5">
+            <!-- text -->
+            <div class="text animation">
+                <p class="blog">Our Blog</p>
+                <h1>Recent blog</h1>
+            </div>
+            <!-- blogs -->
+            <div class="blogs">
+                <!-- 1st blog -->
+                <div class="blog">
+                    <div class="image"><a href="#"><img src="images/certification.png" class="animation"></a></div>
+                    <div class="blog-name"><a href="#">Complete all of the task but didn't get certification
+                            yet😓🤦‍♀️</a></div>
+                    <p class="blog-discription"> 📧 Drop us a quick email at issues@internee.pk with the subject "Didn't
+                        get certification yet." Our team will swiftly resolve the matter, ensuring you get your
+                        recognition promptly.
+                    <p>
+                </div>
+                <!-- 2nd blog -->
+                <div class="blog">
+                    <div class="image"><a href="#"><img src="images/call for mentors.png" class="animation"></a></div>
+                    <div class="blog-name"><a href="#">🚀 Are you a tech expert looking to make a meaningful impact in
+                            the community?🌟🎉 </a></div>
+                    <p class="blog-discription">Our goal is to make Pakistan as an IT Hub. For this, we need more
+                        hands-on developers and tech enthusiast who will lift the Pakistan's IT export into the
+                        top👨‍💻. Your guidance and help may create a significant impact on some one's career. 🚀
+                    <p>
+                </div>
+                <!-- 3rd blog -->
+                <div class="blog">
+                    <div class="image"><a href="#"><img src="images/comunity colab.png" class="animation"></a></div>
+                    <div class="blog-name"><a href="#">🚀Calling communities to Empower Students, Collaborate with
+                            Internee.pk!✌</a></div>
+                    <p class="blog-discription">We'd love to discuss how a collaboration with Internee.pk can benefit
+                        your universites , socities, institutes and educational institutions and specially with
+                        students.
+                    <p>
+                </div>
+                <!-- 4rth blog -->
+                <div class="blog">
+                    <div class="image"><a href="#"><img src="images/claim certificate.jpeg" class="animation"></a></div>
+                    <div class="blog-name"><a href="#">Ready to Showcase Your Expertise? Follow These Simple Steps! 🌟
+                        </a></div>
+                    <p class="blog-discription">To complete the process, send us all the task details via email at
+                        careers@internee.pk. This ensures that we have all the necessary information to validate your
+                        certification.
+                    <p>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <div class="animation">
+                <h1>Subcribe to our Newsletter</h1>
+                <p>Internee.pk kickstart student's tech careers with first internships, providing industry exposure,
+                    practical skills, and networking opportunities, paving the way for their success in the tech
+                    industry.
+                    Separated they live in</p>
+                <div class="email-contact">
+                    <input type="email" placeholder="Enter your Email">
+                    <div class="subscribe-btn">Subscribe</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="about-us">
+                <h3>About</h3>
+                <p>Internee.pk kickstart student's tech careers with first internships, providing industry exposure,
+                    practical skills, and networking opportunities, paving the way for their success in the tech
+                    industry.</p>
+
+                <div class="social-icons animation">
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://instagram.com/internee.pk/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/p/Interneepk-100093222249320/?paipv=0&eav=AfbTrTZ6hdQliV38YXIYGnSYww-KxK8Dkc3Fklcm1l60iWm5wp71eL8X7bBkaomsSB8&_rdr"
+                        target="_blank"> <i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="questions">
+                <h3>Have a Questions?</h3>
+                <div class="location">
+                    <a href="#"><i class="fa-solid fa-location-dot"></i></a>
+                    <p class="text2">Aiwan-e-Tijarat Rd, Seari Quarters, Karachi, Karachi City, Sindh 74000</p>
+                </div>
+                <div class="phone">
+                    <a href="#"><i class="fa-solid fa-phone"></i></a>
+                    <p class="text2">+92 312 3023645</p>
+                </div>
+                <div class="email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p class="text2">info@internee.pk</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script async src="jobportal.js"></script>
+</body>
+
+</html>
